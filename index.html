@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allgoodsstore - Your Premier Department Store Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-icon">🛍️</span>
+                            <span class="logo-text">Allgoodsstore</span>
+                        </a>
+                    </div>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Categories</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#electronics">Electronics</a></li>
+                                <li><a href="#fashion">Fashion</a></li>
+                                <li><a href="#home-living">Home & Living</a></li>
+                                <li><a href="#beauty">Beauty</a></li>
+                                <li><a href="#sports">Sports & Outdoor</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search articles...">
+                        <button id="searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1920&h=600&fit=crop" alt="Shopping">
+                <div class="slide-content">
+                    <h1>Welcome to Allgoodsstore</h1>
+                    <p>Discover the Best Products & Shopping Tips</p>
+                    <a href="#featured" class="btn-primary">Explore Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-articles" id="featured">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="products">Product Reviews</button>
+                <button class="filter-btn" data-filter="platforms">Platform Reviews</button>
+                <button class="filter-btn" data-filter="guides">Shopping Guides</button>
+            </div>
+            
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Article 1 -->
+                <article class="article-card" data-category="products" data-date="2025-08-15">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Wireless Headphones">
+                        <span class="category-badge">Product Review</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">August 15, 2025</span>
+                        <h3><a href="article1.html">Best Wireless Headphones 2025: Complete Buyer's Guide</a></h3>
+                        <p>Discover the top-rated wireless headphones that combine superior sound quality with comfort and style.</p>
+                        <a href="article1.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="platforms" data-date="2025-07-22">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop" alt="Online Shopping">
+                        <span class="category-badge">Platform Review</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">July 22, 2025</span>
+                        <h3><a href="article2.html">Amazon vs. eBay: Which Platform Offers Better Deals?</a></h3>
+                        <p>A comprehensive comparison of two e-commerce giants to help you make smarter shopping decisions.</p>
+                        <a href="article2.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="products" data-date="2025-06-10">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop" alt="Smart Watch">
+                        <span class="category-badge">Product Review</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">June 10, 2025</span>
+                        <h3><a href="article3.html">Smart Watches Under $300: Top Picks for 2025</a></h3>
+                        <p>Find the perfect smartwatch that fits your budget without compromising on features and functionality.</p>
+                        <a href="article3.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="guides" data-date="2025-05-28">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop" alt="Shopping Tips">
+                        <span class="category-badge">Shopping Guide</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">May 28, 2025</span>
+                        <h3><a href="article4.html">Summer Sale Shopping: How to Find the Best Deals</a></h3>
+                        <p>Expert tips and strategies to maximize your savings during the biggest summer sales events.</p>
+                        <a href="article4.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="products" data-date="2025-04-15">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop" alt="Running Shoes">
+                        <span class="category-badge">Product Review</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">April 15, 2025</span>
+                        <h3><a href="article5.html">Top 10 Running Shoes for Every Type of Runner</a></h3>
+                        <p>From beginners to marathoners, find the perfect running shoes for your fitness journey.</p>
+                        <a href="article5.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="platforms" data-date="2025-03-20">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=300&fit=crop" alt="Shopping Mall">
+                        <span class="category-badge">Platform Review</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">March 20, 2025</span>
+                        <h3><a href="article6.html">Walmart+ vs. Target Circle: Membership Benefits Compared</a></h3>
+                        <p>Which retail membership program offers the best value? We break down all the perks and savings.</p>
+                        <a href="article6.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="article-card" data-category="products" data-date="2025-02-14">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=300&fit=crop" alt="Beauty Products">
+                        <span class="category-badge">Product Review</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">February 14, 2025</span>
+                        <h3><a href="article7.html">Valentine's Day Beauty Gifts: Top 15 Picks She'll Love</a></h3>
+                        <p>Curated selection of beauty products and gift sets perfect for your special someone.</p>
+                        <a href="article7.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="article-card" data-category="guides" data-date="2025-02-01">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?w=400&h=300&fit=crop" alt="Home Decor">
+                        <span class="category-badge">Shopping Guide</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">February 1, 2025</span>
+                        <h3><a href="article8.html">Transform Your Home: Budget-Friendly Decor Ideas</a></h3>
+                        <p>Creative and affordable ways to refresh your living space without breaking the bank.</p>
+                        <a href="article8.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="article-card" data-category="products" data-date="2025-01-18">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&h=300&fit=crop" alt="Laptop">
+                        <span class="category-badge">Product Review</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">January 18, 2025</span>
+                        <h3><a href="article9.html">Best Laptops for Students: 2025 Back-to-School Guide</a></h3>
+                        <p>Comprehensive review of laptops that balance performance, portability, and price for students.</p>
+                        <a href="article9.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 10 -->
+                <article class="article-card" data-category="guides" data-date="2025-01-05">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=400&h=300&fit=crop" alt="New Year Shopping">
+                        <span class="category-badge">Shopping Guide</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">January 5, 2025</span>
+                        <h3><a href="article10.html">New Year, New Savings: Smart Shopping Strategies for 2025</a></h3>
+                        <p>Start the year right with these money-saving tips and shopping hacks for savvy consumers.</p>
+                        <a href="article10.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn prev" id="prevPage"><i class="fas fa-chevron-left"></i></button>
+                <div class="page-numbers" id="pageNumbers">
+                    <button class="page-num active">1</button>
+                    <button class="page-num">2</button>
+                </div>
+                <button class="page-btn next" id="nextPage"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-carousel">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=300&h=300&fit=crop" alt="Gaming Console">
+                    <h4>PlayStation 5 Console</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.8</span>
+                    </div>
+                    <p class="price">$499.99</p>
+                    <a href="products.html" class="btn-secondary">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=300&fit=crop" alt="Headphones">
+                    <h4>Sony WH-1000XM4</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                    <p class="price">$349.99</p>
+                    <a href="products.html" class="btn-secondary">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300&h=300&fit=crop" alt="Smart Watch">
+                    <h4>Apple Watch Series 8</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.7</span>
+                    </div>
+                    <p class="price">$399.99</p>
+                    <a href="products.html" class="btn-secondary">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=300&h=300&fit=crop" alt="Perfume">
+                    <h4>Chanel No. 5 Perfume</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                    <p class="price">$149.99</p>
+                    <a href="products.html" class="btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Latest Deals</h2>
+                <p>Subscribe to our newsletter and never miss exclusive offers and shopping tips!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Allgoodsstore</h3>
+                    <p>Your trusted source for product reviews, shopping guides, and the best deals across all major platforms.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#electronics">Electronics</a></li>
+                        <li><a href="#fashion">Fashion</a></li>
+                        <li><a href="#home-living">Home & Living</a></li>
+                        <li><a href="#beauty">Beauty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> info@allgoodsstore.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Shopping Street, NY 10001</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Allgoodsstore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

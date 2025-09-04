@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Allgoodsstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-icon">🛍️</span>
+                            <span class="logo-text">Allgoodsstore</span>
+                        </a>
+                    </div>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html" class="active">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="container">
+            <h1 class="page-title">Featured Products</h1>
+            <p class="page-subtitle">Discover our carefully curated selection of top-rated products</p>
+
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="home">Home & Living</option>
+                        <option value="beauty">Beauty</option>
+                        <option value="sports">Sports & Outdoor</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price Range:</label>
+                    <select id="priceFilter">
+                        <option value="all">All Prices</option>
+                        <option value="0-100">Under $100</option>
+                        <option value="100-300">$100 - $300</option>
+                        <option value="300-500">$300 - $500</option>
+                        <option value="500+">Over $500</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort By:</label>
+                    <select id="sortFilter">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-item" data-category="electronics" data-price="499.99">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=400&h=400&fit=crop" alt="PlayStation 5">
+                        <span class="badge bestseller">Bestseller</span>
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>PlayStation 5 Console</h3>
+                        <p class="product-description">Next-gen gaming console with ultra-high-speed SSD and ray tracing technology</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(245 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$499.99</span>
+                            <span class="original-price">$549.99</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-item" data-category="electronics" data-price="349.99">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=400&fit=crop" alt="Sony Headphones">
+                        <span class="badge new">New</span>
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sony WH-1000XM4 Headphones</h3>
+                        <p class="product-description">Industry-leading noise canceling wireless headphones with 30-hour battery</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(189 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$349.99</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-item" data-category="electronics" data-price="399.99">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&h=400&fit=crop" alt="Apple Watch">
+                        <span class="badge trending">Trending</span>
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple Watch Series 8</h3>
+                        <p class="product-description">Advanced health features, crash detection, and temperature sensing</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(312 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$399.99</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-item" data-category="beauty" data-price="149.99">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&h=400&fit=crop" alt="Perfume">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chanel No. 5 Eau de Parfum</h3>
+                        <p class="product-description">Timeless floral aldehyde fragrance with notes of rose and jasmine</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(456 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$149.99</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-item" data-category="fashion" data-price="89.99">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop" alt="Nike Shoes">
+                        <span class="badge sale">-20%</span>
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Air Max 270</h3>
+                        <p class="product-description">Lifestyle shoes with Max Air unit for exceptional comfort</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(234 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$89.99</span>
+                            <span class="original-price">$110.00</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-item" data-category="home" data-price="199.99">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=400&h=400&fit=crop" alt="Coffee Machine">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nespresso Vertuo Coffee Machine</h3>
+                        <p class="product-description">Premium coffee and espresso maker with one-touch brewing</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(178 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$199.99</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-item" data-category="electronics" data-price="1299.99">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&h=400&fit=crop" alt="MacBook">
+                        <span class="badge premium">Premium</span>
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MacBook Pro 14" M2</h3>
+                        <p class="product-description">Powerful laptop with M2 Pro chip, 16GB RAM, and stunning display</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(92 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$1,299.99</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-item" data-category="sports" data-price="59.99">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=400&fit=crop" alt="Yoga Mat">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Yoga Mat</h3>
+                        <p class="product-description">Non-slip exercise mat with alignment marks and carrying strap</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(156 reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$59.99</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more-section">
+                <button class="btn-load-more">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop" alt="User">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Excellent quality products and amazing customer service. The PlayStation 5 arrived perfectly packaged and works great!"</p>
+                    <span class="review-date">August 10, 2025</span>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" alt="User">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The Sony headphones are absolutely worth it. Best noise cancellation I've experienced!"</p>
+                    <span class="review-date">July 28, 2025</span>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop" alt="User">
+                        <div>
+                            <h4>Emily Davis</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Love my Apple Watch! The health tracking features are incredibly useful. Shipping was fast too."</p>
+                    <span class="review-date">June 15, 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Allgoodsstore</h3>
+                    <p>Your trusted source for product reviews and shopping guides.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Allgoodsstore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product-script.js"></script>
+</body>
+</html>
