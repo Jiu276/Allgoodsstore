@@ -126,6 +126,24 @@
     color: #4b5563;
 }
 
+/* Article Body Links */
+.article-body p a,
+.article-body section a {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(37, 99, 235, 0.3);
+    transition: all 0.3s ease;
+    padding-bottom: 1px;
+}
+
+.article-body p a:hover,
+.article-body section a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
 /* Product Review Cards */
 .product-review {
     background: white;
